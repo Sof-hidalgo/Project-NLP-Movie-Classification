@@ -9,15 +9,25 @@ Film Junky Union, una comunidad de aficionados al cine clásico, necesitaba un s
 Entrenar un modelo de Machine Learning para la clasificación automática de reseñas de películas, asegurando un F1-Score mínimo de 0.85 para lograr una precisión adecuada en la identificación de críticas negativas.
 
 ### Descripción de los datos
-Los datos se almacenan en el archivo imdb_reviews.tsv. Descargar el conjunto de datos.
+Los datos se almacenan en el archivo imdb_reviews.tsv.
 
 Los datos fueron proporcionados por Andrew L. Maas, Raymond E. Daly, Peter T. Pham, Dan Huang, Andrew Y. Ng, y Christopher Potts. (2011). Learning Word Vectors for Sentiment Analysis. La Reunión Anual 49 de la Asociación de Lingüística Computacional (ACL 2011).
 
 Aquí se describen los campos seleccionados:
-
 - review: el texto de la reseña
 - pos: el objetivo, '0' para negativo y '1' para positivo
 - ds_part: 'entrenamiento'/'prueba' para la parte de entrenamiento/prueba del conjunto de datos, respectivamente
+
+## Pasos del proyecto
+- Cargar los datos.
+- Preprocesar los datos, si es necesario.
+- Realizar un análisis exploratorio de datos y haz tu conclusión sobre el desequilibrio de clases.
+- Realizar el preprocesamiento de datos para el modelado.
+- Entrenar al menos tres modelos diferentes para el conjunto de datos de entrenamiento.
+- Probar los modelos para el conjunto de datos de prueba.
+- Escribir algunas reseñas y clasifícalas con todos los modelos.
+- Buscar las diferencias entre los resultados de las pruebas de los modelos en los dos puntos anteriores. Intentar explicarlas.
+- Mostrar los hallazgos.
 
 ## 📊 Conclusiones Finales
 - Se probaron varios enfoques, incluyendo TF-IDF con Regresión Logística y LightGBM, y modelos basados en SpaCy.
